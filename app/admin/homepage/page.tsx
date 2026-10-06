@@ -2,6 +2,8 @@ import { connectDB } from "@/lib/mongodb";
 import Homepage from "@/lib/models/Homepage";
 import HomepageClient from "./HomepageClient";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminHomepageEditorPage() {
   await connectDB();
   const homepage = await Homepage.findOne().lean();

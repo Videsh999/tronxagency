@@ -2,6 +2,8 @@ import { connectDB } from "@/lib/mongodb";
 import SiteSettings from "@/lib/models/SiteSettings";
 import SettingsClient from "./SettingsClient";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminSettingsPage() {
   await connectDB();
   const settings = await SiteSettings.findOne().lean();
