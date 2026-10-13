@@ -1,0 +1,10 @@
+
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/cravery-fd-f5/:path*",
+      "destination": "https://84000.us6.myftpupload.com/cravery-fd-f5/:path*"
+    }
+  ]
+}
